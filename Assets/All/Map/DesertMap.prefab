@@ -1,0 +1,470 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &228257882016934610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4721746967636083956}
+  - component: {fileID: 4880120570690601236}
+  m_Layer: 0
+  m_Name: DesertMaze
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4721746967636083956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228257882016934610}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 632934375965126449}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4880120570690601236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228257882016934610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d026a8b1a7fc5b8429604d59f1495394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_cellPrefab: {fileID: 6920105327259109911, guid: 34a8636a40bda10458bc44ed7ac2da85, type: 3}
+  m_passagePrefab: {fileID: 441852281163077872, guid: d207f9551d10b5e4f9b4858587241619, type: 3}
+  m_departurePrefab: {fileID: 3175402872982771092, guid: b73f9e47307e57542a4b78f24b6d09ff, type: 3}
+  m_arrivalPrefab: {fileID: 7272243305423173697, guid: 434e1c835cb3389438e8607a0dfcc437, type: 3}
+  m_wallPrefab: {fileID: 8497350502276262541, guid: 398bd00a835541547adb67eba05dcf50, type: 3}
+  m_pilar0Prefab: {fileID: 4434555487688760463, guid: 3f57f1fe28a52f242b9a820a0a54710f, type: 3}
+  m_pilar1Prefab: {fileID: 4434555487688760463, guid: 3f57f1fe28a52f242b9a820a0a54710f, type: 3}
+  m_pilar2Prefab: {fileID: 4434555487688760463, guid: 3f57f1fe28a52f242b9a820a0a54710f, type: 3}
+  m_pilar3Prefab: {fileID: 4434555487688760463, guid: 3f57f1fe28a52f242b9a820a0a54710f, type: 3}
+  m_pilar4Prefab: {fileID: 4434555487688760463, guid: 3f57f1fe28a52f242b9a820a0a54710f, type: 3}
+  m_pilar5Prefab: {fileID: 4434555487688760463, guid: 3f57f1fe28a52f242b9a820a0a54710f, type: 3}
+  m_chunkPrefab: {fileID: 6673169195903352812, guid: 89201fc87c81eec4f9e9fcafc729d58e, type: 3}
+  m_chunkSize:
+    m_x: 5
+    m_y: 5
+  m_barrierPrefab: {fileID: 5728648054480256008, guid: 7adae32abf07ed244b10477f6482e29e, type: 3}
+  m_barrierDistanceX: 8
+  m_mazeTimePieces:
+  - name: MiniPiece
+    prefab: {fileID: 6454214306579073805, guid: 96b602d394c58dc458f91bcb0471c51b, type: 3}
+    density: 0.1
+    spawnHeight: 1
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.6
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.65
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.85
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.9
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+  - name: Piece
+    prefab: {fileID: 2229782164080688825, guid: bc261744683908d4197b876c1591d25e, type: 3}
+    density: 0.02
+    spawnHeight: 1
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.3
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.35
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.85
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.9
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+  - name: BigPiece
+    prefab: {fileID: 7884558811299019844, guid: 74fe127bb7353474bb9337fbd5eaa32c, type: 3}
+    density: 0.002
+    spawnHeight: 1.6
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+  m_scaleMultiplicator: 3
+  m_spawnDistance: -7
+  m_spawnHeight: 1
+  m_playerPathTransform: {fileID: 0}
+--- !u!1 &5451265197764556667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1297222244675732339}
+  - component: {fileID: 4358109192076233492}
+  - component: {fileID: 25554204476906891}
+  - component: {fileID: 4717872423298500994}
+  - component: {fileID: 4756544519763823159}
+  m_Layer: 0
+  m_Name: DesertTerrain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1297222244675732339
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5451265197764556667}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 632934375965126449}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4358109192076233492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5451265197764556667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da40e14522c975f409136c99f561577d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_scaleMultiplicator: 3
+  m_emptySpaceSize:
+    m_x: 1
+    m_y: 3
+  m_meshHeightMultiplier: 6
+  m_terrainCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_regions:
+  - name: 
+    height: 0.2
+    colour: {r: 0.8584906, g: 0.80462104, b: 0.2713154, a: 0}
+  - name: 
+    height: 0.4
+    colour: {r: 0.7735849, g: 0.7105791, b: 0.09852261, a: 0}
+  - name: 
+    height: 1
+    colour: {r: 0.77254903, g: 0.6382721, b: 0.0980392, a: 0}
+  m_noiseScale: 12
+  m_octaves: 4
+  m_persistance: 0.5
+  m_lacunarity: 2
+  m_offset: {x: 0, y: 0}
+  m_meshHeightCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_elements:
+  - m_name: Cactus
+    m_prefabs:
+    - {fileID: 136472, guid: e9ef501c03d9e0f4f8965162fd6bfbba, type: 3}
+    - {fileID: 185962, guid: 9739a89a5ec460c4b94bb52719a0931c, type: 3}
+    m_intensity: 0.01
+    m_notIn: 1
+  - m_name: Plant
+    m_prefabs:
+    - {fileID: 117896, guid: 2150293d12bfb2448a976624bc72a6f2, type: 3}
+    m_intensity: 0.01
+    m_notIn: 1
+  - m_name: Rock
+    m_prefabs:
+    - {fileID: 116276, guid: 689a36ce1e8152f488b3a0d5fc644805, type: 3}
+    m_intensity: 0.03
+    m_notIn: 1
+  m_wayColour: {r: 0.8773585, g: 0.7598508, b: 0.15312389, a: 0}
+--- !u!33 &25554204476906891
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5451265197764556667}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &4717872423298500994
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5451265197764556667}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0fdb62711cdd4ab4697961815cd5826c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4756544519763823159
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5451265197764556667}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!1 &7773045531897530387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 632934375965126449}
+  - component: {fileID: 1717414465551220807}
+  m_Layer: 0
+  m_Name: DesertMap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &632934375965126449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7773045531897530387}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4721746967636083956}
+  - {fileID: 1297222244675732339}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1717414465551220807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7773045531897530387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d87e44f57d7e3644981751a8a5ec776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_scaleMultiplicator: 3
+  m_spawnLocationSize:
+    m_x: 3
+    m_y: 3
+  m_spawnHeight: 1.08
+  m_mazeInstance: {fileID: 4880120570690601236}
+  m_terrainInstance: {fileID: 4358109192076233492}
